@@ -71,6 +71,7 @@
         <EnableSavePassword>false</EnableSavePassword>
         <EnableKerberos>false</EnableKerberos>
         <SupportNDS>false</SupportNDS>
+        <Domain>grupmutuam</Domain>
         <NDS_Settings>
             <DefaultTree></DefaultTree>
         </NDS_Settings>
