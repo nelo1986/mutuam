@@ -67,7 +67,7 @@
     <Failover>
     </Failover>
     <Logon>
-        <LogonMethod>prompt</LogonMethod>
+        <LogonMethod>direct</LogonMethod>
         <EnableSavePassword>false</EnableSavePassword>
         <EnableKerberos>false</EnableKerberos>
         <SupportNDS>false</SupportNDS>
