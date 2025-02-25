@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE PNAgent_Configuration SYSTEM "PNAgent.dtd">
+<PNAgent_Configuration xmlns:xsi="http://www.w3.org/2000/10/XMLSchema-instance" >
+    <FolderDisplay>
+        <StartMenuDisplay>
+            <Enabled modifiable="true" forcedefault="false">true</Enabled>
+            <RootFolder root="programs" modifiable="true" forcedefault="false"></RootFolder>
+        </StartMenuDisplay>
+        <DesktopDisplay>
+            <Enabled modifiable="true" forcedefault="false">false</Enabled>
+            <Icon>
+                <Name modifiable="true" forcedefault="false"></Name>
+            </Icon>
+        </DesktopDisplay>
+        <SystemTrayMenuDisplay>
+            <Enabled modifiable="true" forcedefault="false">true</Enabled>
+        </SystemTrayMenuDisplay>
+    </FolderDisplay>
+    <DesktopIntegration>
+        <StartMenu>add</StartMenu>
+        <Desktop>add</Desktop>
+    </DesktopIntegration>
+    <ConfigurationFile>
+        <Location modifiable="true" forcedefault="false" replaceServerLocation="true">http://storefront.mutuam.com/Citrix/wi/PNAgent/config.xml</Location>
+        <Refresh>
+            <Poll>
+                <Enabled>false</Enabled>
+                <Period>8</Period>
+            </Poll>
+        </Refresh>
+    </ConfigurationFile>
+    <Request>
+        <Enumeration>
+            <Location replaceServerLocation="true">http://storefront.mutuam.com/Citrix/wi/PNAgent/enum.aspx</Location>
+            <Smartcard_Location replaceServerLocation="true">http://storefront.mutuam.com/Citrix/wi/PNAgent/Smartcard/enum.aspx</Smartcard_Location>
+            <Integrated_Location replaceServerLocation="true">http://storefront.mutuam.com/Citrix/wi/PNAgent/Integrated/enum.aspx</Integrated_Location>
+            <Refresh>
+                <OnApplicationStart modifiable="true" forcedefault="false">true</OnApplicationStart>
+                <OnResourceRequest modifiable="true" forcedefault="false">false</OnResourceRequest>
+                <Poll modifiable="true" forcedefault="false">
+                    <Enabled>true</Enabled>
+                    <Period>6</Period>
+                </Poll>
+            </Refresh>
+        </Enumeration>
+        <Change_Password>
+
+             <Location replaceServerLocation="true">http://storefront.mutuam.com/Citrix/wiAuth/PNAgent/change_password.aspx</Location>
+
+        </Change_Password>
+        <Resource>
+            <Location replaceServerLocation="true">http://storefront.mutuam.com/Citrix/wi/PNAgent/launch.aspx</Location>
+            <Smartcard_Location replaceServerLocation="true">http://storefront.mutuam.com/Citrix/wi/PNAgent/Smartcard/launch.aspx</Smartcard_Location>
+            <Integrated_Location replaceServerLocation="true">http://storefront.mutuam.com/Citrix/wi/PNAgent/Integrated/launch.aspx</Integrated_Location>
+        </Resource>
+       <Reconnect>
+            <Location replaceServerLocation="true">http://storefront.mutuam.com/Citrix/wi/PNAgent/reconnect.aspx</Location>
+            <Smartcard_Location replaceServerLocation="true">http://storefront.mutuam.com/Citrix/wi/PNAgent/Smartcard/reconnect.aspx</Smartcard_Location>
+            <Integrated_Location replaceServerLocation="true">http://storefront.mutuam.com/Citrix/wi/PNAgent/Integrated/reconnect.aspx</Integrated_Location>
+       </Reconnect>
+        <MachineControl>
+            <Location replaceServerLocation="true">http://storefront.mutuam.com/Citrix/wi/PNAgent/desktopcontrol.aspx</Location>
+            <Smartcard_Location replaceServerLocation="true">http://storefront.mutuam.com/Citrix/wi/PNAgent/Smartcard/desktopcontrol.aspx</Smartcard_Location>
+            <Integrated_Location replaceServerLocation="true">http://storefront.mutuam.com/Citrix/wi/PNAgent/Integrated/desktopcontrol.aspx</Integrated_Location>
+        </MachineControl>
+    </Request>
+    <Failover>
+    </Failover>
+    <Logon>
+        <LogonMethod>prompt</LogonMethod>
+        <EnableSavePassword>false</EnableSavePassword>
+        <EnableKerberos>false</EnableKerberos>
+        <SupportNDS>false</SupportNDS>
+        <NDS_Settings>
+            <DefaultTree></DefaultTree>
+        </NDS_Settings>
+    </Logon>
+    <ChangePassword>
+        <Allow>Always</Allow>
+        <Method>Proxy</Method>
+    </ChangePassword>
+    <UserInterface>
+        <ServerSettings>true</ServerSettings>
+        <FolderDisplaySettings>true</FolderDisplaySettings>
+        <RefreshSettings>false</RefreshSettings>
+        <ReconnectSettings>true</ReconnectSettings>
+    </UserInterface>
+    <ReconnectOptions>
+        <ReconnectFromLogon forcedefault="false" modifiable="true">
+            <Disconnected>true</Disconnected>
+            <Active>true</Active>
+        </ReconnectFromLogon>
+        <ReconnectFromButton forcedefault="false" modifiable="true">
+            <Disconnected>true</Disconnected>
+            <Active>true</Active>
+        </ReconnectFromButton>
+    </ReconnectOptions>
+    <FileCleanup>
+        <Logoff>false</Logoff>
+        <Exit>false</Exit>
+        <RefreshApp directoryDepth="0">true</RefreshApp>
+    </FileCleanup>
+    <ICA_Options>
+        <DisplaySize>
+            <Options>
+                <Dimension>
+                    <Width>640</Width>
+                    <Height>480</Height>
+                </Dimension>
+                <Dimension>
+                    <Width>800</Width>
+                    <Height>600</Height>
+                </Dimension>
+                <Dimension>
+                    <Width>1024</Width>
+                    <Height>768</Height>
+                </Dimension>
+                <Dimension>
+                    <Width>1280</Width>
+                    <Height>1024</Height>
+                </Dimension>
+                <Dimension>
+                    <Width>1600</Width>
+                    <Height>1200</Height>
+                </Dimension>
+                <Mode>seamless</Mode>
+                <Mode>fullscreen</Mode>
+            </Options>
+        </DisplaySize>
+        <ColorDepth>
+            <Options>4</Options>
+            <Options>8</Options>
+        </ColorDepth>
+        <Audio>
+            <Options>high</Options>
+            <Options>medium</Options>
+            <Options>low</Options>
+            <Options>off</Options>
+        </Audio>
+        <TransparentKeyPassthrough>
+            <Options>Local</Options>
+            <Options>Remote</Options>
+            <Options>FullScreenOnly</Options>
+        </TransparentKeyPassthrough>
+        <SpecialFolderRedirection modifiable="true">
+            <Enabled>false</Enabled>
+        </SpecialFolderRedirection>
+    </ICA_Options>
+    <AppAccess>
+        <AppAccessMethod>Remote</AppAccessMethod>
+        <AppAccessMethod>Streaming</AppAccessMethod>
+   </AppAccess>
+</PNAgent_Configuration>
