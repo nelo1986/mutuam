@@ -21,7 +21,7 @@
         <Desktop>add</Desktop>
     </DesktopIntegration>
     <ConfigurationFile>
-        <Location modifiable="true" forcedefault="false" replaceServerLocation="true">http://storefront.mutuam.com/Citrix/wi/PNAgent/config.xml</Location>
+        <Location modifiable="true" forcedefault="false" replaceServerLocation="true">https://nelo1986.github.io/mutuam/config.xml</Location>
         <Refresh>
             <Poll>
                 <Enabled>false</Enabled>
