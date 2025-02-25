@@ -22,7 +22,13 @@
     </DesktopIntegration>
     <ConfigurationFile>
        <Location modifiable="true" forcedefault="false" replaceServerLocation="true">https://nelo1986.github.io/mutuam/config.xml</Location>
-</ConfigurationFile>
+        <Refresh>
+            <Poll>
+                <Enabled>false</Enabled>
+                    <Period>8</Period>
+            </Poll>
+        </Refresh>
+    </ConfigurationFile>
 
     <Request>
         <Enumeration>
