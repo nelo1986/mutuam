@@ -21,14 +21,9 @@
         <Desktop>add</Desktop>
     </DesktopIntegration>
     <ConfigurationFile>
-        <Location modifiable="true" forcedefault="false" replaceServerLocation="true">https://nelo1986.github.io/mutuam/config.xml</Location>
-        <Refresh>
-            <Poll>
-                <Enabled>false</Enabled>
-                <Period>8</Period>
-            </Poll>
-        </Refresh>
-    </ConfigurationFile>
+       <Location modifiable="true" forcedefault="false" replaceServerLocation="true">https://nelo1986.github.io/mutuam/config.xml</Location>
+</ConfigurationFile>
+
     <Request>
         <Enumeration>
             <Location replaceServerLocation="true">http://storefront.mutuam.com/Citrix/wi/PNAgent/enum.aspx</Location>
